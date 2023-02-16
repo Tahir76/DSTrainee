@@ -6,10 +6,10 @@ def students():
     bio_students= int(input("Total number of Bio students in the class :"))
     print(" ")
     
-    remaining_students=no_of_students-math_students-bio_students
-    print("Remaining Students", remaining_students)
+    without_math_bio=no_of_students-math_students-bio_students
+    print("Remaining 1 students are: ", without_math_bio)
     
-    math_bio_students=math_students+bio_students
-    print("Total no. of bio and math students is :",math_bio_students)
+    with_math_bio=math_students+bio_students
+    print("Total no. of bio and math students are :",with_math_bio)
 
 students()
