@@ -1,0 +1,8 @@
+#write a method which check if the given string strat from alphabets and end with number
+def str_end_alph(string):
+    if string[1].isalpha() and string[-1].isdigit():
+        print('Accept')
+    else:
+        print('Discard')
+str_end_alph('ankirai@')
+str_end_alph('ankitrai326')
