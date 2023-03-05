@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ML Model Load Balancer</title>
+  </head>
+  <body>
+    <h1>Loaded Models</h1>
+    <ul>
+      {% for model in loaded_models %}
+      <li>{{ model }}</li>
+      {% endfor %}
+    </ul>
+    <h1>Process Request</h1>
+    <form method="POST" action="/process_request">
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" required>
+      <button type="submit">Process</button>
+    </form>
+  </body>
+</html>
